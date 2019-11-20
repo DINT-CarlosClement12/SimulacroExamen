@@ -23,6 +23,7 @@ namespace SimulacroExamen
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = PrediccionDia.ObtenerDatos();
         }
     }
 }

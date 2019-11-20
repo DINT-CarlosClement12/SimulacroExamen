@@ -63,12 +63,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="converters\ImagePathConverter.cs" />
+    <Compile Include="converters\FahrenheitToCelsiusconverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrediccionDia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +96,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\newyork1.jpg" />
+    <Resource Include="img\newyork2.jpg" />
+    <Resource Include="img\sun_weather.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\lluvia.png" />
+    <Resource Include="img\nieve.png" />
+    <Resource Include="img\nubes.png" />
+    <Resource Include="img\sol.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
